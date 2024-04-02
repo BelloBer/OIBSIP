@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: headerBackground 10s infinite linear;
+}
+
+a {
+    color: orange;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/17632052/pexels-photo-17632052/free-photo-of-sports-car-on-display-in-dealership.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.section {
+    padding: 50px 0;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.car {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.car img {
+    max-width: 100%;
+    height: auto;
+}
+
+.car h3 {
+    margin-top: 10px;
+}
+
+.car p {
+    margin-top: 5px;
+}
+
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.service {
+    flex: 0 1 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@keyframes headerBackground {
+    0% { background-image: url('https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=600'); }
+    20% { background-image: url('https://images.pexels.com/photos/3354648/pexels-photo-3354648.jpeg?auto=compress&cs=tinysrgb&w=600'); }
+    40% { background-image: url('https://images.pexels.com/photos/1519192/pexels-photo-1519192.jpeg?auto=compress&cs=tinysrgb&w=600'); }
+    60% { background-image: url('https://images.pexels.com/photos/2834653/pexels-photo-2834653.jpeg?auto=compress&cs=tinysrgb&w=600'); }
+    80% { background-image: url('https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=600'); }
+    100% { background-image: url('https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=600'); }
+}
+
+.white{
+    color: white;
+}
+
+form input, textarea, label {
+    color: white;
+    bottom: 10px;
+    display: block;
+    border-radius: 10px;
+}
+
+form input:hover, textarea:hover{
+    background-color: #300931;
+}
